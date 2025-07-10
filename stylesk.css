@@ -1,0 +1,82 @@
+/* Основные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Цветовая схема */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    
+}
+
+.header h1 a,
+.nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h3, h4 {
+    text-decoration: none;
+    font-style: italic;
+    color: #686868;
+}
+
+/* Шапка страницы */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #8a8a8a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Основной контент */
+#content section {
+    padding: 2rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.menu-items img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* Подвал */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    position:static;
+}
+
+/* Адаптация под мобильные устройства */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+    
+    .menu-items img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
